@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Cabin+Condensed:wght@400;500;600;700&family=Lobster&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+/*font-family: "Raleway", sans-serif;*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --white: white;
+    --light: #f2fedc;
+    --offwhite:#f8ecce;
+    --darkbrown: #5c5540;
+    --base: #c2ac5e;
+}
+body {
+    background-image: linear-gradient(var(--darkbrown), var(--base), var(--offwhite), var(--white)); 
+}
+html {
+    scroll-behavior: smooth;
+    font-family: "Raleway", sans-serif;
+}
+
+/*Header Section*/
+.navbar {
+    background-color: var(--darkbrown);
+}
+.navbar-brand {
+    padding: 10px 20px;
+    font-size: 32px;
+    letter-spacing: 5px;
+    color: var(--offwhite);
+    transition: ease-in-out .2s;
+}
+.navbar-brand:hover {
+    color: var(--white);
+}
+.nav-item {
+    padding: 10px 50px;
+}
+.nav-link {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 8px;
+    color: var(--offwhite);
+    transition: ease-in-out .2s;
+    font-family: "Raleway", sans-serif;
+}
+.nav-link:hover {
+    color: var(--white);
+    text-shadow: 4px 4px 10px var(--darkbrown);
+}
+
+/*Card Section*/
+.card {
+    background-image: linear-gradient(var(--base), var(--light), var(--offwhite));
+    margin: 60px;
+    border-radius: 20px 20px 0;
+}
+.card-title {
+    background-image: linear-gradient(var(--darkbrown), var(--base));
+    color: var(--offwhite);
+    font-size: 30px;
+    letter-spacing: 4px;
+    padding: 10px;
+    border: 2px solid var(--darkbrown);
+    border-radius: 20px 0;
+    text-shadow: 3px 3px 10px var(--darkbrown);
+    font-family: "Raleway", sans-serif;
+}
+.card-text {
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    
+}
+.btn {
+    background-image: radial-gradient(var(--base), var(--darkbrown));
+    color: var(--offwhite);
+    height: 30px;
+    width: 140px;
+    border-radius: 10px;
+    line-height: 15px;
+    border: none;
+    box-shadow: 4px 4px 15px var(--darkbrown);
+    transition: ease-in-out .1s;
+}
+.btn:hover {
+    transform: scale(1.1);
+    color: var(--white);
+    box-shadow: 4px 4px 20px var(--darkbrown);
+}
+#cardBtn {
+    position: absolute;
+    bottom: 3%;
+}
+
+/*Modal Section*/
+.modal-header {
+    background-image: linear-gradient(var(--darkbrown), var(--base), var(--offwhite));
+}
+.modal-title {
+    color: var(--white);
+}
+.modal-menu, .modal-price {
+    font-size: 30px;
+    letter-spacing: 1px;
+
+}
+
+/*Contact Section*/
+.contact-section {
+    margin-bottom: 50px;
+}
+.contact-header {
+    height: 100px;
+    text-align: center;
+    color: var(--white);
+    background-image: linear-gradient(var(--darkbrown), var(--base), var(--offwhite));
+}
+.contact {
+    font-size: 40px;
+    padding: 10px;
+    font-style: italic;
+}
+.email, .phone {
+    color: var(--darkbrown);
+    letter-spacing: 5px;
+    text-align: center;
+}
+.fa-solid {
+    color: rgb(0, 128, 128, .6);
+}
+.fa-solid:hover {
+    color: rgb(0, 128, 128);
+}
+
+/*Carousel and Hours Section*/
+.carousel-item {
+    height: 400px;
+    border: solid var(--base) 4px;
+} 
+.carousel-item img {
+    height: 400px;
+    border: solid var(--darkbrown) 4px;
+}
+.hour-display {
+    color: var(--darkbrown);
+    text-align: center;
+    margin-top: 50px;
+}
+.hour-header {
+    margin: 20px;
+    font-size: 50px;
+    text-decoration: overline 6px;
+}
+.days {
+    margin-top: 40px;
+    text-decoration: overline 4px;
+    text-shadow: 2px 2px 10px var(--darkbrown);
+}
+
+/*Footer*/
+footer {
+    margin-top: 50px;
+    background-color: var(--offwhite);
+}
+.footer-header {
+    height: 100px;
+    text-align: center;
+    color: var(--white);
+    background-image: linear-gradient(var(--darkbrown), var(--base), var(--offwhite));
+}
+.footer-link-header {
+    padding: 10px;
+    font-size: 40px;
+    font-style: italic;
+}
+.footer-item {
+    margin: 20px;
+    list-style-type: none;
+}
+.footer-link {
+    color: var(--darkbrown);
+    text-decoration: none;
+    font-size: 30px;
+}
+.footer-link:hover {
+    color: black;
+    text-shadow: 2px 2px 10px black;
+}
+.footer-fa {
+    margin: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(0, 128, 128, .6);
+}
+.footer-fa:hover {
+    color: rgb(0, 128, 128);
+}
+#footer-icon {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
